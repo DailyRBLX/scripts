@@ -5,6 +5,9 @@ function destroyremlol()
         if tonumber(v.Name) then
             v:Destroy()
         end
+        if string.len(v.Name) == 0 then
+            v:Destroy() 
+        end
     end
 end
 destroyremlol()
